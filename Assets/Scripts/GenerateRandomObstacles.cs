@@ -30,7 +30,7 @@ public class GenerateRandomObstacles : MonoBehaviour
             {
                 float randomX = Random.Range(-23.0f, 23.0f);
 
-                Vector3 obstaclePosition = new Vector3(randomX, 3f, -48f);
+                Vector3 obstaclePosition = new Vector3(randomX, 0f, 248f);
                 Quaternion obstacleRotation = new Quaternion(0f, 0f, 0f, 1);
 
                 timer += Time.deltaTime;

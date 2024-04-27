@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Capsule : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     public Rigidbody rbody;
 
@@ -13,7 +13,7 @@ public class Capsule : MonoBehaviour
     void Awake()
     {
         rbody = GetComponent<Rigidbody>();
-        rbody.AddRelativeForce(Vector3.forward * speed, ForceMode.Impulse);
+        rbody.AddRelativeForce(Vector3.back * speed, ForceMode.Impulse);
         Destroy(gameObject, lifespan);
     }
 
