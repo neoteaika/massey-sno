@@ -474,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: treePrefab
       value: 
-      objectReference: {fileID: 5402366218150972229, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
+      objectReference: {fileID: 7756985221202307453, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
     - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: obstaclePrefab
       value: 

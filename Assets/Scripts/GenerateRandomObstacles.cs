@@ -29,7 +29,7 @@ public class GenerateRandomObstacles : MonoBehaviour
             {
                 GameObject objectNext = null;
 
-                float randomObstacle = Random.Range(0, 3);
+                float randomObstacle = Random.Range(0, 4);
                 Debug.Log("Obstacle: " + randomObstacle);
 
                 switch (randomObstacle)
