@@ -55,7 +55,9 @@ public class GenerateRandomObstacles : MonoBehaviour
                     //Debug.Log("Random X: " + randomX);
 
                     Vector3 obstaclePosition = new Vector3(randomX, objectNext.transform.position.y, 248f);
-                    Quaternion obstacleRotation = new Quaternion(objectNext.transform.rotation.x, objectNext.transform.rotation.y, objectNext.transform.rotation.z, 1);
+
+                    Vector3 obstacleRotationVector = new Vector3(objectNext.transform.eulerAngles.x, objectNext.transform.eulerAngles.y, objectNext.transform.eulerAngles.z);
+                    Quaternion obstacleRotation = Quaternion.Euler(obstacleRotationVector.x, obstacleRotationVector.y, obstacleRotationVector.z);
 
                     Instantiate(objectNext, obstaclePosition, obstacleRotation);
                 }
