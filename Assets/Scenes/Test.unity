@@ -2456,9 +2456,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: rampPrefab
+      value: 
+      objectReference: {fileID: 7994053044202885736, guid: ef19af3fc8b307545adec5ce81a9ab60, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: treePrefab
+      value: 
+      objectReference: {fileID: 7756985221202307453, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: obstaclePrefab
       value: 
       objectReference: {fileID: 5402366218150972229, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: spikeyBallPrefab
+      value: 
+      objectReference: {fileID: 6621130509508979852, guid: c540686e78be1ba44bf25b66b190b6d8, type: 3}
     - target: {fileID: 5713660394745654183, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: m_Name
       value: ObstacleMaker
@@ -2861,35 +2873,6 @@ MonoBehaviour:
   physicalSpeed: 60
   useAbsoluteMotion: 1
   usePhysicalMotion: 0
---- !u!114 &1377391740854932242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377391740854932239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7406b069f967e49830feddadf0520b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rbody: {fileID: 0}
-  speed: 10
-  lifespan: 1
---- !u!114 &1377391740854932243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377391740854932239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a303574d7e391446b66e25c703e56c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerBulletPrefab: {fileID: 0}
-  projectileSpawn: {fileID: 0}
 --- !u!4 &1377391740854932244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3536221095225196852, guid: 60468ccfdd725a64f8adb9c2fe7a97e7, type: 3}
