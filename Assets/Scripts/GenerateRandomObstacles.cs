@@ -30,7 +30,7 @@ public class GenerateRandomObstacles : MonoBehaviour
                 GameObject objectNext = null;
 
                 float randomObstacle = Random.Range(0, 4);
-                Debug.Log("Obstacle: " + randomObstacle);
+                //Debug.Log("Obstacle: " + randomObstacle);
 
                 switch (randomObstacle)
                 {
@@ -52,7 +52,7 @@ public class GenerateRandomObstacles : MonoBehaviour
                 if (objectNext)
                 {
                     float randomX = Random.Range(-23.0f, 23.0f);
-                    Debug.Log("Random X: " + randomX);
+                    //Debug.Log("Random X: " + randomX);
 
                     Vector3 obstaclePosition = new Vector3(randomX, 0f, 248f);
                     Quaternion obstacleRotation = new Quaternion(0f, 0f, 0f, 1);
