@@ -6,8 +6,8 @@ public class Obstacle : MonoBehaviour
 {
     public Rigidbody rbody;
 
-    public float speed = 20f;
-    public float lifespan = 12f;
+    public float speed = 60f;
+    public float lifespan = 30f;
 
     // Start is called before the first frame update
     void Awake()

@@ -468,9 +468,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: rampPrefab
+      value: 
+      objectReference: {fileID: 7994053044202885736, guid: ef19af3fc8b307545adec5ce81a9ab60, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: treePrefab
+      value: 
+      objectReference: {fileID: 5402366218150972229, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: obstaclePrefab
       value: 
       objectReference: {fileID: 5402366218150972229, guid: 5943bb29b4f41b849b462f3dc09dc081, type: 3}
+    - target: {fileID: 3289741681806901729, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
+      propertyPath: spikeyBallPrefab
+      value: 
+      objectReference: {fileID: 6621130509508979852, guid: c540686e78be1ba44bf25b66b190b6d8, type: 3}
     - target: {fileID: 5713660394745654183, guid: 94d97e9598e760a4e940551956d332ec, type: 3}
       propertyPath: m_Name
       value: ObstacleMaker

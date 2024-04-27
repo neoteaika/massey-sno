@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class GenerateRandomObstacles : MonoBehaviour
 {
-    public GameObject obstaclePrefab;
-
-    public int objectMax = 20;
-
-    private int objectCount = 0;
+    public GameObject treePrefab;
+    public GameObject rampPrefab;
+    public GameObject spikeyBallPrefab;
 
     private float waitTime = 1.25f; // Wait this amount of time before generating a new obstacle
     private float timer = 0.0f;
@@ -22,26 +20,47 @@ public class GenerateRandomObstacles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject objectNext;
-
-        if (obstaclePrefab) // Stops an unknown exception error
+        if (treePrefab && rampPrefab && spikeyBallPrefab) // Stops an unknown exception error
         {
-            if (objectCount < objectMax) // Only render up to the maximum number of objects
+
+            timer += Time.deltaTime;
+
+            if (timer > waitTime)
             {
-                float randomX = Random.Range(-23.0f, 23.0f);
+                GameObject objectNext = null;
 
-                Vector3 obstaclePosition = new Vector3(randomX, 0f, 248f);
-                Quaternion obstacleRotation = new Quaternion(0f, 0f, 0f, 1);
+                float randomObstacle = Random.Range(0, 3);
+                Debug.Log("Obstacle: " + randomObstacle);
 
-                timer += Time.deltaTime;
-
-                if (timer > waitTime)
+                switch (randomObstacle)
                 {
-                    Instantiate(obstaclePrefab, obstaclePosition, obstacleRotation);
-                    timer = timer - waitTime; // Resets the timing interval
-
-                    objectCount++;
+                    case 0:
+                        break;
+                    case 1:
+                        objectNext = treePrefab;
+                        break;
+                    case 2:
+                        objectNext = rampPrefab;
+                        break;
+                    case 3:
+                        objectNext = spikeyBallPrefab;
+                        break;
+                    default:
+                        break;
                 }
+
+                if (objectNext)
+                {
+                    float randomX = Random.Range(-23.0f, 23.0f);
+                    Debug.Log("Random X: " + randomX);
+
+                    Vector3 obstaclePosition = new Vector3(randomX, 0f, 248f);
+                    Quaternion obstacleRotation = new Quaternion(0f, 0f, 0f, 1);
+
+                    Instantiate(objectNext, obstaclePosition, obstacleRotation);
+                }
+
+                timer = timer - waitTime; // Resets the timing interval
             }
         }
     }
