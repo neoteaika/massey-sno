@@ -24,9 +24,10 @@ public class PlayerInput : MonoBehaviour
     {
         //Debug.Log(Input.GetAxis("Horizontal"));
         horizontalInput = Input.GetAxis("Horizontal") * Time.deltaTime * translateSpeed;
-        verticalInput = Input.GetAxis("Vertical") * Time.deltaTime * translateSpeed;
+        //verticalInput = Input.GetAxis("Vertical") * Time.deltaTime * translateSpeed;
 
-        Vector3 movementDirection = new Vector3(horizontalInput, 0f, verticalInput);
+        //Vector3 movementDirection = new Vector3(horizontalInput, 0f, verticalInput);
+        Vector3 movementDirection = new Vector3(horizontalInput, 0f, 0f);
 
         if (useAbsoluteMotion)
         {
