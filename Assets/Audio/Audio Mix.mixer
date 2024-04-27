@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-8682283494212527423
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Music
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: bc2a4b69897542c40bbe09e7d6afcf6a
+  m_Children: []
+  m_Volume: 81ec2b85f98772a4c9928c8fe38403f7
+  m_Pitch: a380e2f5982f61b45b73341cdc5c378f
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2697953892926806016}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-2697953892926806016
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2d8c079999c03d6428256b9e885596d2
+  m_EffectName: Attenuation
+  m_MixLevel: c4596490ab6801e4d8685b44d24155d9
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -16,7 +49,11 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters: []
-  m_AudioMixerGroupViews: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 7e101208b279dc348a4acdff2fa395bb
+    - bc2a4b69897542c40bbe09e7d6afcf6a
+    name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
@@ -28,7 +65,8 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 7e101208b279dc348a4acdff2fa395bb
-  m_Children: []
+  m_Children:
+  - {fileID: -8682283494212527423}
   m_Volume: 8eab03ac25b16ad42a07c05ab5a47ffc
   m_Pitch: 07e1db5ab2213df4f84dffe40c546486
   m_Send: 00000000000000000000000000000000
@@ -61,5 +99,6 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 584f351cdbbff3f4484e0fc5bbd7c48a
-  m_FloatValues: {}
+  m_FloatValues:
+    81ec2b85f98772a4c9928c8fe38403f7: -29.785166
   m_TransitionOverrides: {}
