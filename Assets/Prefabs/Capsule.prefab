@@ -130,4 +130,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: -4565260753506623115}
   speed: 20
-  lifespan: 10
+  lifespan: 18
