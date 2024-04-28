@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Sno.Scoreboards
 {
     [Serializable]
-    public class scoreboardsavedata
+    public class ScoreboardSaveData
     {
         public List<ScoreboardEntryData> highscores = new List<ScoreboardEntryData>();
     }

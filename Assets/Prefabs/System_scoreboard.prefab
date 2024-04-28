@@ -171,6 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809535914904837520}
+  - component: {fileID: 6125597568338823314}
   m_Layer: 0
   m_Name: System_Scoreboard
   m_TagString: Untagged
@@ -194,3 +195,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6125597568338823314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951600875183851497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b398f993034f044988aa4e8e8d4cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScoreboardEntries: 5
+  highscoresHolderTransform: {fileID: 1920299926}
+  scoreboardEntryObject: {fileID: 8809827032125588129, guid: 55a72fa007514584da6cc4322317eab2, type: 3}
+  testEntryName: 'james '
+  testEntryScore: 1000

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Sno.Scoreboards
 {
-    public class scoreboardentryui
+    public class ScoreboardEntryUI : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI entryNameText = null;
         [SerializeField] private TextMeshProUGUI entryScoreText = null;
@@ -13,7 +13,7 @@ namespace Sno.Scoreboards
         public void Initialise(ScoreboardEntryData scoreboardEntryData)
         {
             entryNameText.text = scoreboardEntryData.entryName;
-            entryScoreText.text = scoreboardEntryData.entryScore;ToString();
+            entryScoreText.text = scoreboardEntryData.entryScore.ToString();
 
         }
 
