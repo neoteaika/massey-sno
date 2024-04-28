@@ -2892,15 +2892,3 @@ MonoBehaviour:
   maxSize: 30
   growFactor: 0.1
   waitTime: 1
---- !u!114 &1377391740854932246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377391740854932239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fdb7407498f8ad4ca92819704b7c1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
