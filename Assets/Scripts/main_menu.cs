@@ -17,7 +17,10 @@ public class main_menu : MonoBehaviour
 
     }
 
-    
+    public void Scoreboard()
+    {
+        SceneManager.LoadScene("high_Scores");
+    }
 
     
 

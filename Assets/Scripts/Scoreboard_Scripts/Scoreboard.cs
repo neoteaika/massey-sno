@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace DapperDino.Scoreboards
+namespace Sno.Scoreboards
 {
     public class Scoreboard : MonoBehaviour
     {
